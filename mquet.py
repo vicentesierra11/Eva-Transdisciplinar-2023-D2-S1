@@ -13,3 +13,8 @@ screen_height = ventana.winfo_screenheight()
 
 canvas = tk.Canvas(ventana, width=screen_width, height=screen_height)
 canvas.pack()
+
+def carga_Imagen(sFile):
+    image = Image.open(sFile)
+    photo = ImageTk.PhotoImage(image)
+    return photo
