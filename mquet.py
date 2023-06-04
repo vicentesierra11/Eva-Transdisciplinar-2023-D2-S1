@@ -1,5 +1,5 @@
 import tkinter as tk
-import pygame
+import pygame 
 
 def fondo():
     canvas.create_image(0, 0, anchor="center", image="???")
@@ -18,3 +18,7 @@ def carga_Imagen(sFile):
     image = Image.open(sFile)
     photo = ImageTk.PhotoImage(image)
     return photo
+
+screen_width = ventana.winfo_screenwidth()
+screen_height = ventana.winfo_screenheight()
+Bkg = carga_Imagen('bkg2.jpg')  # Cargar fondo
