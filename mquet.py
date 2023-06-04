@@ -1,8 +1,8 @@
 import tkinter as tk
-import pygame 
+from PIL import Image, ImageTk
 
 def fondo():
-    canvas.create_image(0, 0, anchor="center", image="???")
+    canvas.create_image(0, 0, anchor="center", image="bkg2.jpg")
 
 ventana = tk.Tk()
 ventana.geometry("1200x800")
@@ -22,3 +22,7 @@ def carga_Imagen(sFile):
 screen_width = ventana.winfo_screenwidth()
 screen_height = ventana.winfo_screenheight()
 Bkg = carga_Imagen('bkg2.jpg')  # Cargar fondo
+
+fondo()
+
+ventana.mainloop()
