@@ -26,3 +26,22 @@ label_fondo.place(x=0, y=0)
 label_superpuesta = tk.Label(ventana, image=imagen_superpuesta, borderwidth=0)
 label_superpuesta.place(x=32, y=40)
 ventana.mainloop()
+
+# Crear el lienzo de la gráfica
+fig, ax = plt.subplots(figsize=(4.38, 3.53))
+x = np.array([1, 2, 3, 4])
+y = np.array([1, 2, 3, 4])
+ax.plot(x, y)
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+ax.set_title('M.U.R')
+ax.grid(True)
+
+# Crear el widget de lienzo de la gráfica
+lienzo_grafica = FigureCanvasTkAgg(fig, master=ventana)
+lienzo_grafica.draw()
+lienzo_grafica.get_tk_widget().place(x=730, y=122)  # Ajustar las coordenadas según sea necesario
+
+# Crear el contenedor de las fórmulas
+contenedor_formulas = tk.Frame(ventana, width=400, height=400, bg='grey')
+contenedor_formulas.place(x=780, y=530)  # Ajustar las coordenadas según sea necesario
