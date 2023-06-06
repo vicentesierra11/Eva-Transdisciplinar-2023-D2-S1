@@ -25,7 +25,6 @@ label_fondo.place(x=0, y=0)
 # Crear un widget Label con la imagen superpuesta
 label_superpuesta = tk.Label(ventana, image=imagen_superpuesta, borderwidth=0)
 label_superpuesta.place(x=32, y=40)
-ventana.mainloop()
 
 # Crear el lienzo de la gráfica
 fig, ax = plt.subplots(figsize=(4.38, 3.53))
