@@ -127,6 +127,8 @@ def interfaz_velocidad():
 def interfaz_tiempo():
     global label_t_xi, label_t_operador, label_t_xf, label_t_operador2, label_t_v, label_t_resultado
     global entry_t_xi, entry_t_xf, entry_t_v, boton_t_calcular
+
+    entry_v_xi.pack_forget()
     # //Label (etiquetas)://
         #----1° parte operatoria---
     label_t_xi = tk.Label(ventana, text="Posición inicial: ", fg="green")
