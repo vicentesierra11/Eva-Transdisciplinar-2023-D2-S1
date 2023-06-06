@@ -1,28 +1,28 @@
 import tkinter as tk
-from PIL import Image, ImageTk
+import numpy as np
+import turtle
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from PIL import ImageTk, Image
 
-def fondo():
-    canvas.create_image(0, 0, anchor="center", image="bkg2.jpg")
-
+# Crear la ventana principal con resolución
 ventana = tk.Tk()
-ventana.geometry("1200x800")
-ventana.title("Movimiento Rectilineo Uniforme")
+ventana.geometry('1200x700')
+ventana.resizable(False, False)
 
-screen_width = ventana.winfo_screenwidth()
-screen_height = ventana.winfo_screenheight()
+# Cargar las imágenes
+imagen_fondo = ImageTk.PhotoImage(Image.open("marco.png"))
+imagen_fondo1 = Image.open("marco.png")
+imagen_fondo1 = imagen_fondo1.resize((1200, 600), Image.ANTIALIAS)
+imagen_superpuesta = Image.open("bkg2.jpg")
+imagen_superpuesta = imagen_superpuesta.resize((659, 339), Image.ANTIALIAS)
+imagen_superpuesta = ImageTk.PhotoImage(imagen_superpuesta)
 
-canvas = tk.Canvas(ventana, width=screen_width, height=screen_height)
-canvas.pack()
+# Crear un widget Label con la imagen de fondo
+label_fondo = tk.Label(ventana, image=imagen_fondo)
+label_fondo.place(x=0, y=0)
 
-def carga_Imagen(sFile):
-    image = Image.open(sFile)
-    photo = ImageTk.PhotoImage(image)
-    return photo
-
-screen_width = ventana.winfo_screenwidth()
-screen_height = ventana.winfo_screenheight()
-Bkg = carga_Imagen('bkg2.jpg')  # Cargar fondo
-
-fondo()
-
+# Crear un widget Label con la imagen superpuesta
+label_superpuesta = tk.Label(ventana, image=imagen_superpuesta, borderwidth=0)
+label_superpuesta.place(x=32, y=40)
 ventana.mainloop()
