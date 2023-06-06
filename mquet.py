@@ -45,3 +45,55 @@ lienzo_grafica.get_tk_widget().place(x=730, y=122)  # Ajustar las coordenadas se
 # Crear el contenedor de las fórmulas
 contenedor_formulas = tk.Frame(ventana, width=400, height=400, bg='grey')
 contenedor_formulas.place(x=780, y=530)  # Ajustar las coordenadas según sea necesario
+
+def animacion_flecha_MUR():
+    # Función para mover la flecha en MUR
+    def mover_flecha():
+        # Crear el lienzo de dibujo con la imagen superpuesta
+        lienzo = tk.Canvas(ventana, width=659, height=339, highlightthickness=0)
+        lienzo.place(x=32, y=40)
+
+        # Crear el objeto Turtle para la flecha
+        flecha = turtle.RawTurtle(lienzo)
+        flecha.shape("arrow")
+        flecha.color("red")
+
+        # Definir las coordenadas iniciales de la flecha
+        x_inicial = -335  # Coordenada x del borde izquierdo del lienzo
+        y_inicial = 0  # Coordenada y del centro del lienzo
+
+        # Definir la velocidad de la flecha
+        velocidad = 3
+
+        # Mover la flecha en línea recta
+        while True:
+            x_inicial += velocidad
+            flecha.goto(x_inicial, y_inicial)
+
+            if x_inicial >= 659:  # Detener la animación después de que la flecha haya recorrido toda la imagen
+                break
+
+    mover_flecha()
+
+
+def hacer_clic():
+    animacion_flecha_MUR()
+
+boton = tk.Button(ventana, text="Iniciar", command=hacer_clic, width=53, height=3)
+boton.pack()
+boton.place(x=153, y=410)
+
+# Fórmulas del movimiento uniforme rectilíneo
+formulas = [
+    "Posición (x) = x₀ + v * t",
+    "Velocidad (v) = (x - x₀) / t",
+    "Tiempo (t) = (x - x₀) / v"
+]
+
+# Crear un widget Label para cada fórmula
+for formula in formulas:
+    etiqueta_formula = tk.Label(contenedor_formulas, text=formula)
+    etiqueta_formula.pack()
+
+# Ejecutar el bucle principal de la interfaz
+ventana.mainloop()
