@@ -12,9 +12,9 @@ ventana.title("M.U.R - Movimiento Uniforme rectilineo")
 # Cargar las imágenes
 imagen_fondo = ImageTk.PhotoImage(Image.open("marco.png"))
 imagen_fondo1 = Image.open("marco.png")
-imagen_fondo1 = imagen_fondo1.resize((1200, 650), Image.ANTIALIAS)
+imagen_fondo1 = imagen_fondo1.resize((1200, 650), Image.LANCZOS)
 imagen_superpuesta = Image.open("bkg2.jpg")
-imagen_superpuesta = imagen_superpuesta.resize((659, 339), Image.ANTIALIAS)
+imagen_superpuesta = imagen_superpuesta.resize((659, 339), Image.LANCZOS)
 imagen_superpuesta = ImageTk.PhotoImage(imagen_superpuesta)
 
 # Crear un widget Label con la imagen de fondo
