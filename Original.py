@@ -1,8 +1,9 @@
-import tkinter as tk
+import tkinter as tk, turtle
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from PIL import ImageTk, Image
+
 # Crear la ventana principal con resolución
 ventana = tk.Tk()
 ventana.geometry('1200x650')
@@ -74,19 +75,20 @@ boton2.place(x=282, y=411)
 boton3 = tk.Button(ventana, text="Tiempo", command=lambda: [interfaz_tiempo()], width=16, height=3)
 boton3.pack()
 boton3.place(x=410, y=411)
+
 # interfaces
 def interfaz_velocidad():
     global label_v_xi, label_v_operador, label_v_xf, label_v_ti, label_v_operador2, label_v_tf, label_v_resultado
     global entry_v_xi, entry_v_xf, entry_v_ti, entry_v_tf, boton_v_calcular
     # //Label (etiquetas)://
         #----1° parte operacion---
-    label_v_xi = tk.Label(ventana, text="Posición inicial: ", fg="green")
+    label_v_xi = tk.Label(ventana, text="Posición final: ", fg="green")
     label_v_operador = tk.Label(ventana, text=" - ", fg="red")
-    label_v_xf = tk.Label(ventana, text="Posición final: ", fg="green")
+    label_v_xf = tk.Label(ventana, text="Posición inicial: ", fg="green")
         #----2° parte operacion---
-    label_v_ti = tk.Label(ventana, text="Tiempo inicial: ", fg="green")
+    label_v_ti = tk.Label(ventana, text="Tiempo final: ", fg="green")
     label_v_operador2 = tk.Label(ventana, text=" - ", fg="red")
-    label_v_tf = tk.Label(ventana, text="Tiempo final:", fg="green")
+    label_v_tf = tk.Label(ventana, text="Tiempo inicial:", fg="green")
         #----resultado-----------
     label_v_resultado = tk.Label(ventana, text="-")
 
@@ -281,9 +283,9 @@ def animacion_flecha_MUR():
 def hacer_clic():
     animacion_flecha_MUR()
 
-boton = tk.Button(ventana, text="Iniciar", command=hacer_clic, width=53, height=3)
+boton = tk.Button(ventana, text="Iniciar", command=hacer_clic)
 boton.pack()
-boton.place(x=153, y=410)
+boton.place(x=315, y=470)
 
 
 
