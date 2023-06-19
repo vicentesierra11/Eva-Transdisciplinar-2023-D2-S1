@@ -274,11 +274,16 @@ def animacion_flecha_MUR():
 
         # Mover la flecha en línea recta
         while True:
+            # Mover la flecha en línea recta
             x_inicial += velocidad
             flecha.goto(x_inicial, y_inicial)
 
-            if x_inicial >= 659:  # Detener la animación después de que la flecha haya recorrido toda la imagen
-                break
+            # Verificar si la flecha ha alcanzado los límites de movimiento
+            if x_inicial >= limite_derecho or x_inicial <= limite_izquierdo:
+                velocidad *= -1  # Invertir la dirección de movimiento
+
+            # Actualizar el lienzo para mostrar los cambios
+            lienzo.update()
 
     mover_flecha()
 
