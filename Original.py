@@ -35,10 +35,9 @@ label_superpuesta.place(x=32, y=40)
 fig, ax = plt.subplots(figsize=(4.38, 3.53))
 x = np.array([1, 2, 3, 4])
 y = np.array([1, 2, 3, 4])
-ax.plot(x, y)
-ax.set_xlabel('x')
-ax.set_ylabel('y')
-ax.set_title('M.U.R')
+ax.set_xlabel('Tiempo')
+ax.set_ylabel('Posición')
+ax.set_title('Relación entre Posición y Tiempo')
 ax.grid(True)
 
 # Crear el widget de lienzo de la gráfica
@@ -145,6 +144,7 @@ def interfaz_velocidad():
 
     boton_v_calcular.place(x=490, y=510)
 
+    
     #if numeroesconder == -1:
     #    esconder_velocidad()
 
@@ -350,7 +350,27 @@ imagen3 = ImageTk.PhotoImage(imagen3)
 boton3 = tk.Button(ventana, image=imagen3, command=lambda: [interfaz_tiempo()])
 boton3.place(x=410, y=409)
 
-        
+def trazar_grafica():
+    v_xi = int(entry_v_xi.get())
+    v_xf = int(entry_v_xf.get())
+    v_ti = int(entry_v_ti.get())
+    v_tf = int(entry_v_tf.get())
+
+    posiciones = [v_xi, v_xf]
+    tiempos = [v_ti, v_tf]
+
+    ax.clear()
+    ax.plot(tiempos, posiciones, marker='o')
+    ax.set_xlabel('Tiempo')
+    ax.set_ylabel('Posición')
+    ax.set_title('Relación entre Posición y Tiempo')
+    ax.grid(True)
+
+    lienzo_grafica.draw()
+
+# Crear el botón para trazar la gráfica
+boton_trazar = tk.Button(ventana, text="Trazar Gráfica", command=trazar_grafica)
+boton_trazar.place(x=30, y=160)
 
 #--- Bucle Ventana ---#
 ventana.mainloop()
