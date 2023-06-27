@@ -48,10 +48,10 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 ## Pasos de instalación
 
 - Clona el repositorio del proyecto en tu máquina local.
-# git clone https://github.com/vicentesierra11/Eva-Transdisciplinar-2023-D2-S1.git
+git clone https://github.com/vicentesierra11/Eva-Transdisciplinar-2023-D2-S1.git
 - Navega hasta el directorio raíz del proyecto.
 - Instala la biblioteca de Tkinter.
-# pip install tkinter
+pip install tkinter
 - Ejecuta el proyecto.
 
 ### Guía de uso
