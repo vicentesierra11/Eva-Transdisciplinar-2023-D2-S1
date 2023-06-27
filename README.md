@@ -19,7 +19,7 @@ La simulación del MRU se basa en las ecuaciones básicas de la física. En part
 
 # - Posición (x) en función del tiempo (t): x = x0 + vt
 # - Velocidad (v) constante v = (Xf - Xi) / (Tf - Ti)
-![Texto alternativo](file:///C:/Users/Javier/Videos/formulas.png)
+![Texto alternativo](formulas.png)
 ### Cómo se Resuelve
 
 Para simular el MRU, se puede utilizar un enfoque de programación en el que se actualiza la posición del objeto en intervalos de tiempo regulares, teniendo en cuenta la velocidad constante. Esto se puede lograr mediante la implementación de un algoritmo que actualice la posición en cada paso de tiempo.
