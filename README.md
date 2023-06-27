@@ -3,7 +3,7 @@
 ## Descripción
 
 La física desde tiempos inmemorables ha sido de mucha importancia en el día a día, con el tiempo, gracias a la física se han podido crear un sin numero de artefactos muy útiles para el ser humano y se ha podido comprender como funciona el mundo.
-Este proyecto está enfocado en simular lo que es el Movimiento Rectilíneo Uniforme (MRU), el objetivo de este proyecto es mostrar como funciona el MRU utilizando el lenguaje Python y la librería de Tkinter, en el cual se podrá visualizar una animación y una grafica que muestre el funcionamiento del MRU.
+Este proyecto está enfocado en simular lo que es el Movimiento Rectilíneo Uniforme (MRU), el objetivo de este proyecto es mostrar como funciona el MRU utilizando el lenguaje Python y las librería de Tkinter y Turtle, en el cual se podrá visualizar una animación y una grafica que muestre el funcionamiento del MRU.
 
 ## Evento Físico a Simular
 Este proyecto consiste en crear una simulación física del Movimiento Rectilíneo Uniforme (MRU). El MRU es un tipo de movimiento en el que un objeto se desplaza en línea recta con una velocidad constante.
