@@ -60,5 +60,5 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 
 ## Conclusión
 
-En resumen, este proyecto de simulación del Movimiento Rectilíneo Uniforme (MRU) ha sido exitoso en proporcionar una representación visual y funcional de este concepto físico fundamental. A través del uso de Python y la biblioteca Tkinter, se ha creado una interfaz gráfica intuitiva que permite a los usuarios comprender mejor y experimentar con el MRU. 
+En resumen, este proyecto de simulación del Movimiento Rectilíneo Uniforme (MRU) ha sido exitoso en proporcionar una representación visual y funcional de este concepto físico fundamental. A través del uso de Python y las biblioteca de Tkinter y Turtle, se ha creado una interfaz gráfica intuitiva que permite a los usuarios comprender mejor y experimentar con el MRU. 
 En general, este proyecto de simulación del MRU ha demostrado la capacidad de Python y Tkinter para crear una interfaz interactiva y educativa en el campo de la física. Al proporcionar una representación visual y la posibilidad de experimentar con los parámetros del MRU, se ha facilitado el aprendizaje y la comprensión de este concepto científico para los usuarios.
