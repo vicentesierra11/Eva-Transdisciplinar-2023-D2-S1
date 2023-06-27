@@ -178,9 +178,9 @@ def interfaz_tiempo():
     # //Label (etiquetas)://
         #----1° parte operatoria---
 
-    label_t_xi = tk.Label(ventana, text="Posición inicial: ", fg="green")
+    label_t_xi = tk.Label(ventana, text="Posición final: ", fg="green")
     label_t_operador = tk.Label(ventana, text=" - ", fg="red")
-    label_t_xf = tk.Label(ventana, text="Posición final: ", fg="green")
+    label_t_xf = tk.Label(ventana, text="Posición inicial: ", fg="green")
         #----2° parte operatoria----
     label_t_operador2 = tk.Label(ventana, text=" / ", fg="red")
     label_t_v = tk.Label(ventana, text="Velocidad: ", fg="green")
