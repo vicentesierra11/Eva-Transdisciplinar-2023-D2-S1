@@ -3,7 +3,7 @@
 ## Descripción
 
 La física desde tiempos inmemorables ha sido de mucha importancia en el día a día, con el tiempo, gracias a la física se han podido crear un sin numero de artefactos muy útiles para el ser humano y se ha podido comprender como funciona el mundo.
-Este proyecto está enfocado en simular lo que es el Movimiento Rectilíneo Uniforme (MRU), el objetivo de este proyecto es mostrar como funciona el MRU utilizando el lenguaje Python y la librería de Tkinter, en el cual se podrá visualizar una animación y una grafica que muestre el funcionamiento del MRU.
+Este proyecto está enfocado en simular lo que es el Movimiento Rectilíneo Uniforme (MRU), el objetivo de este proyecto es mostrar como funciona el MRU utilizando el lenguaje Python y las librería de Tkinter y Turtle, en el cual se podrá visualizar una animación y una grafica que muestre el funcionamiento del MRU.
 
 ## Evento Físico a Simular
 Este proyecto consiste en crear una simulación física del Movimiento Rectilíneo Uniforme (MRU). El MRU es un tipo de movimiento en el que un objeto se desplaza en línea recta con una velocidad constante.
@@ -17,9 +17,9 @@ Desde entonces, el estudio del MRU ha sido fundamental en la física y ha sentad
 
 La simulación del MRU se basa en las ecuaciones básicas de la física. En particular, se utilizan las fórmulas para calcular la posición y velocidad en función del tiempo:
 
-- Posición (x) en función del tiempo (t): x = x0 + vt
-- Velocidad (v) constante
-![Formulas del MRU](C:\Users\Javier\Desktop\formulas.png)
+# - Posición (x) en función del tiempo (t): x = x0 + vt
+# - Velocidad (v) constante v = (Xf - Xi) / (Tf - Ti)
+![Texto alternativo](file:///C:/Users/Javier/Videos/formulas.png)
 ### Cómo se Resuelve
 
 Para simular el MRU, se puede utilizar un enfoque de programación en el que se actualiza la posición del objeto en intervalos de tiempo regulares, teniendo en cuenta la velocidad constante. Esto se puede lograr mediante la implementación de un algoritmo que actualice la posición en cada paso de tiempo.
@@ -61,5 +61,5 @@ Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 
 ## Conclusión
 
-En resumen, este proyecto de simulación del Movimiento Rectilíneo Uniforme (MRU) ha sido exitoso en proporcionar una representación visual y funcional de este concepto físico fundamental. A través del uso de Python y la biblioteca Tkinter, se ha creado una interfaz gráfica intuitiva que permite a los usuarios comprender mejor y experimentar con el MRU. 
+En resumen, este proyecto de simulación del Movimiento Rectilíneo Uniforme (MRU) ha sido exitoso en proporcionar una representación visual y funcional de este concepto físico fundamental. A través del uso de Python y las biblioteca de Tkinter y Turtle, se ha creado una interfaz gráfica intuitiva que permite a los usuarios comprender mejor y experimentar con el MRU. 
 En general, este proyecto de simulación del MRU ha demostrado la capacidad de Python y Tkinter para crear una interfaz interactiva y educativa en el campo de la física. Al proporcionar una representación visual y la posibilidad de experimentar con los parámetros del MRU, se ha facilitado el aprendizaje y la comprensión de este concepto científico para los usuarios.
