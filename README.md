@@ -11,6 +11,7 @@ Este proyecto consiste en crear una simulación física del Movimiento Rectilín
 ### Breve Historia Asociada (Origen)
 
 El Movimiento Rectilíneo Uniforme ha sido un concepto fundamental en la física desde la antigüedad. Fue descrito por primera vez por los filósofos griegos, pero fue Galileo Galilei quien formuló las leyes básicas del MRU en el siglo XVII.
+Desde entonces, el estudio del MRU ha sido fundamental en la física y ha sentado las bases para el desarrollo de teorías más avanzadas, como el movimiento acelerado y la mecánica cuántica. El MRU se utiliza en una amplia gama de campos, desde la física y la ingeniería hasta la astronomía y la navegación.
 
 ### Matemática Empleada
 
@@ -18,7 +19,7 @@ La simulación del MRU se basa en las ecuaciones básicas de la física. En part
 
 - Posición (x) en función del tiempo (t): x = x0 + vt
 - Velocidad (v) constante
-
+![Formulas del MRU](C:\Users\Javier\Desktop\formulas.png)
 ### Cómo se Resuelve
 
 Para simular el MRU, se puede utilizar un enfoque de programación en el que se actualiza la posición del objeto en intervalos de tiempo regulares, teniendo en cuenta la velocidad constante. Esto se puede lograr mediante la implementación de un algoritmo que actualice la posición en cada paso de tiempo.
