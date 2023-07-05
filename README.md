@@ -58,7 +58,7 @@ Link del video: https://www.youtube.com/watch?v=8XEYkaqMQgg&ab_channel=JAVIERIGN
 
 ### Guía de uso - explicacion del evento fisico - explicacion del codigo
 
--En el siguiente link se encuentra el video:
+-En el siguiente link se encuentra el video: https://youtu.be/xZj3-sM1wuI
  
 
 
