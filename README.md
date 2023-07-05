@@ -40,6 +40,7 @@ En este proyecto se uso principalmente la libreria de Tkinter, Tkinter es una bi
 ## Guía de instalación
 
 Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
+Link del video: https://www.youtube.com/watch?v=8XEYkaqMQgg&ab_channel=JAVIERIGNACIOSANHUEZAACU%C3%91A
 
 ## Requisitos previos
 
