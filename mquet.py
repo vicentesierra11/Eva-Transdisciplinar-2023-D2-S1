@@ -53,7 +53,7 @@ contenedor_formulas.place(x=780, y=530)  # Ajustar las coordenadas según sea ne
 # Fórmulas del movimiento uniforme rectilíneo
 formulas = [
     "Posición  (x) = x₀ + v * t",
-    "Velocidad (v) = (x - x₀) / t",
+    "Velocidad (v) = (x - x₀) / (t - t₀)",
     "Tiempo    (t) = (x - x₀) / v"
 ]
 
@@ -73,8 +73,8 @@ for formula in formulas:
 #------------------------------------------------------------------------------
 
 def interfaz_velocidad():
-    global label_v_xi, label_v_operador, label_v_xf, label_v_ti, label_v_operador2, label_v_tf, label_v_resultado
-    global entry_v_xi, entry_v_xf, entry_v_ti, entry_v_tf, boton_v_calcular, numeroesconder
+    global label_v_xi,label_v_vp , label_v_operador, label_v_xf, label_v_ti, label_v_operador2, label_v_tf, label_v_resultado
+    global entry_v_xi,label_v_vp , entry_v_xf, entry_v_ti, entry_v_tf, boton_v_calcular, numeroesconder
 
     def esconder_velocidad():
         label_v_xi.place_forget()
@@ -88,6 +88,7 @@ def interfaz_velocidad():
         entry_v_xf.place_forget()
         entry_v_ti.place_forget()
         entry_v_tf.place_forget()
+        label_v_vp.place_forget()
         boton_v_calcular.place_forget()
         boton_limpiar.place_forget()
         ventana.update()
@@ -100,6 +101,7 @@ def interfaz_velocidad():
 
     numeroesconder = -1 * numeroesconder
     
+    label_v_vp = tk.Label(ventana, text="Calcular velocidad promedio: ", fg="red")
     label_v_xi = tk.Label(ventana, text="Posición Final: ", fg="green")
     label_v_operador = tk.Label(ventana, text=" - ", fg="red")
     label_v_xf = tk.Label(ventana, text="Posición Inicial: ", fg="green")
@@ -140,7 +142,7 @@ def interfaz_velocidad():
             #------------------------
     entry_v_ti.place(x=191, y=574, width=35)
     entry_v_tf.place(x=377, y=574, width=35)
-
+    label_v_vp.place(x=191, y=475, width=170)
             # /Place (boton)/
 
     boton_v_calcular.place(x=490, y=510)
